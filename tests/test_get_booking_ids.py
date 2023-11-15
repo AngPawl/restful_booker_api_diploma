@@ -8,6 +8,7 @@ from tests.conftest import booking_api
 from restful_booker_api_diploma.data import sort_by_name
 
 
+@allure.feature('Get Booking IDs')
 @allure.title('Get Booking IDs by name: Status code is 200')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')
@@ -21,6 +22,7 @@ def test_get_booking_ids_by_name_status_code_is_200():
         ), f"Status code {response.status_code} is incorrect"
 
 
+@allure.feature('Get Booking IDs')
 @allure.title('Get Booking IDs by name: Response schema is valid')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')

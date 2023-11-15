@@ -5,6 +5,7 @@ from allure_commons.types import Severity
 from tests.conftest import booking_api
 
 
+@allure.feature('Delete Booking')
 @allure.title('Delete Booking: Status code is 201')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')
@@ -30,6 +31,7 @@ def test_delete_booking_with_valid_id(authenticate_user, create_booking):
         ), f"Status code {response.status_code} is incorrect"
 
 
+@allure.feature('Delete Booking')
 @allure.title('Delete Booking: Status code is 405')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')

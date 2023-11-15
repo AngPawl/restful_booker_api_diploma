@@ -8,6 +8,7 @@ from tests.conftest import booking_api
 from restful_booker_api_diploma.data import new_booking
 
 
+@allure.feature('Create Booking')
 @allure.title('Create Booking: Status code is 200')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')
@@ -27,6 +28,7 @@ def test_create_booking_status_code_200():
         ), f"Status code {response.status_code} is incorrect"
 
 
+@allure.feature('Create Booking')
 @allure.title('Create Booking: Response schema is valid')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')
@@ -45,6 +47,7 @@ def test_create_booking_response_schema_is_valid():
         jsonschema.validate(response.json(), schema)
 
 
+@allure.feature('Create Booking')
 @allure.title('Create Booking: Response data is valid')
 @allure.label('owner', 'AngPawl')
 @allure.tag('smoke tests')
