@@ -100,7 +100,7 @@ pytest .
 
 ![This is an image](design/images/allure-testops3.png)
 
-## Test cases and run results are integrated with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-959">Atlassian Jira</a> and linked to the corresponding task
+## Test cases and run results are integrated with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-960">Atlassian Jira</a> and linked to the corresponding task
 
 ![This is an image](design/images/jira.png)
 
